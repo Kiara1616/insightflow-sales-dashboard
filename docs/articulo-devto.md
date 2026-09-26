@@ -4,8 +4,6 @@ description: "Un caso práctico de modelado de indicadores, visualización inter
 tags: python, streamlit, dataviz, github
 ---
 
-# Del dato al indicador: diseño de un dashboard de ventas reproducible con Streamlit
-
 Un dashboard es útil cuando responde preguntas concretas y permite verificar de dónde salen sus cifras. En este trabajo construí un panel de análisis comercial que transforma un archivo de transacciones en indicadores, comparaciones y vistas filtrables. El resultado está disponible públicamente y su código puede reproducirse.
 
 > **Explora el proyecto:** [aplicación interactiva](https://insightflow-sales-dashboard-he3kljwft48fj5lkjgtyu.streamlit.app) · [repositorio público y código fuente](https://github.com/Kiara1616/insightflow-sales-dashboard) · [pruebas automatizadas](https://github.com/Kiara1616/insightflow-sales-dashboard/actions)
