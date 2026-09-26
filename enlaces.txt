@@ -1,0 +1,15 @@
+InsightFlow Sales Dashboard
+Actividad: Visualization Reports or Dashboard
+Equipo: Kiara1616
+
+Repositorio público:
+PENDIENTE_DE_SUBIR_A_GITHUB
+
+Aplicación publicada en Streamlit Community Cloud:
+PENDIENTE_DE_DESPLEGAR
+
+Artículo en Dev.to, Medium o Hashnode:
+PENDIENTE_DE_PUBLICAR
+
+Video público:
+PENDIENTE_DE_PUBLICAR
