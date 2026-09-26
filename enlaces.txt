@@ -6,7 +6,7 @@ Repositorio público:
 PENDIENTE_DE_SUBIR_A_GITHUB
 
 Aplicación publicada en Streamlit Community Cloud:
-PENDIENTE_DE_DESPLEGAR
+https://insightflow-sales-dashboard-he3kljwft48fj5lkjgtyu.streamlit.app
 
 Artículo en Dev.to, Medium o Hashnode:
 PENDIENTE_DE_PUBLICAR
