@@ -3,7 +3,7 @@ Actividad: Visualization Reports or Dashboard
 Equipo: Kiara1616
 
 Repositorio público:
-PENDIENTE_DE_SUBIR_A_GITHUB
+https://github.com/Kiara1616/insightflow-sales-dashboard
 
 Aplicación publicada en Streamlit Community Cloud:
 https://insightflow-sales-dashboard-he3kljwft48fj5lkjgtyu.streamlit.app
