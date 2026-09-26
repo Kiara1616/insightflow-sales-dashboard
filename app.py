@@ -103,10 +103,17 @@ def main() -> None:
         """
         <style>
         .block-container { padding-top: 2.2rem; padding-bottom: 2rem; }
-        [data-testid="stMetric"] { background: #f7f9fc; border: 1px solid #e5e7eb; padding: 1rem; border-radius: 0.6rem; }
-        [data-testid="stMetricLabel"] { color: #52606d; }
-        h1 { color: #172b4d; letter-spacing: -0.02em; }
-        h2, h3 { color: #243b53; }
+        [data-testid="stMetric"] {
+            background: var(--secondary-background-color);
+            color: var(--text-color);
+            border: 1px solid color-mix(in srgb, var(--text-color) 15%, transparent);
+            padding: 1rem;
+            border-radius: 0.6rem;
+        }
+        [data-testid="stMetricLabel"], [data-testid="stMetricValue"] {
+            color: var(--text-color);
+        }
+        h1 { letter-spacing: -0.02em; }
         </style>
         """,
         unsafe_allow_html=True,
