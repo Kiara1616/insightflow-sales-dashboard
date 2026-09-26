@@ -1,47 +1,51 @@
-# 📊 InsightFlow Sales Dashboard
+# InsightFlow Sales Dashboard
 
-Proyecto de la **Actividad Grupal 01: Visualization Reports or Dashboard** para el equipo de `Kiara1616`.
+Panel interactivo para explorar el rendimiento de ventas por período, región, categoría y producto. Desarrollado como parte de **Visualization Reports or Dashboard**.
 
-**InsightFlow** es un panel comercial interactivo para convertir registros de ventas en información útil para la toma de decisiones. El nombre se utilizará como identidad del proyecto en el repositorio, la aplicación publicada y el artículo técnico.
+**[Abrir el panel público](https://insightflow-sales-dashboard-he3kljwft48fj5lkjgtyu.streamlit.app)** · **[Ver las pruebas automatizadas](https://github.com/Kiara1616/insightflow-sales-dashboard/actions)**
 
-El dashboard permite analizar ventas por periodo, región, categoría y producto. Incluye indicadores principales, gráficos interactivos y una tabla de detalle.
+## Qué permite analizar
 
-## Ejecutar localmente
+- Ventas totales, unidades vendidas, venta promedio por unidad y producto con mayor facturación.
+- Evolución mensual de las ventas y comparación entre regiones.
+- Resumen por categoría y consulta de los registros filtrados.
+- Selección interactiva de regiones, categorías y fechas.
+
+Los datos de `data/ventas.csv` son **datos de ejemplo** incluidos para demostrar el funcionamiento del panel. No representan ventas reales ni deben utilizarse para tomar decisiones comerciales.
+
+## Tecnologías y estructura
+
+La aplicación utiliza **Streamlit** para la interfaz, **Pandas** para preparar y agrupar los datos, y **Plotly** para los gráficos. Las comprobaciones se ejecutan con **Pytest** y se automatizan mediante **GitHub Actions** en cada `push` y `pull request`.
+
+```text
+app.py                       Aplicación y lógica de visualización
+data/ventas.csv              Datos de demostración
+tests/test_app.py             Validaciones del conjunto de datos
+.github/workflows/tests.yml  Integración continua
+requirements.txt             Dependencias de Python
+```
+
+## Ejecutar en local
+
+Requiere Python 3.12. Desde la raíz del repositorio:
 
 ```bash
 python -m venv .venv
-# Windows PowerShell
-.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
+```
+
+En Windows PowerShell, activa el entorno con `.venv\Scripts\Activate.ps1`; en macOS o Linux, usa `source .venv/bin/activate`. Después ejecuta:
+
+```bash
+python -m pip install -r requirements.txt
 streamlit run app.py
 ```
 
-La aplicación se abrirá en `http://localhost:8501`.
+La aplicación estará disponible en `http://localhost:8501`.
 
-## Pruebas automatizadas
+## Calidad del proyecto
 
-```bash
-pytest -q
-```
+Ejecuta las pruebas localmente con `python -m pytest -q`. El [flujo de integración continua](.github/workflows/tests.yml) repite estas comprobaciones automáticamente en GitHub. La versión pública se actualiza desde la rama `main` en Streamlit Community Cloud.
 
-Cada `push` y cada `pull request` ejecuta automáticamente las pruebas mediante [GitHub Actions](.github/workflows/tests.yml).
+## Contexto académico
 
-## Despliegue en Streamlit Community Cloud
-
-1. Crear un repositorio público en GitHub y subir todos los archivos.
-2. Entrar en [share.streamlit.io](https://share.streamlit.io/) con la cuenta de GitHub.
-3. Seleccionar **Create app**.
-4. Elegir el repositorio, la rama `main` y el archivo `app.py`.
-5. Pulsar **Deploy**.
-
-La aplicación no requiere secretos: los datos de demostración están en `data/ventas.csv`.
-
-## Tecnologías
-
-- Python 3.12
-- Streamlit
-- Pandas
-- Plotly
-- Pytest
-- GitHub Actions
-- Streamlit Community Cloud
+Este repositorio documenta la implementación técnica del panel para la actividad grupal. El artículo y el video complementarán esta documentación con el proceso de construcción, la demostración y las conclusiones.
