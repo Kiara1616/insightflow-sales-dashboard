@@ -2,6 +2,7 @@
 title: "Del dato al indicador: diseño y evaluación de un dashboard de ventas con Streamlit"
 description: "Un caso reproducible sobre indicadores, decisiones de visualización, automatización y límites de un dashboard publicado en la nube."
 tags: python, streamlit, dataviz, github
+cover_image: https://raw.githubusercontent.com/Kiara1616/insightflow-sales-dashboard/main/docs/assets/banner-articulo.png
 ---
 
 ¿Qué debe mostrar un dashboard para que una persona pueda pasar de «¿cuánto vendimos?» a «¿dónde conviene investigar?»? Esa pregunta orientó la construcción de un panel de análisis comercial con Python. Partí de un archivo de ventas, definí indicadores, construí vistas interactivas, añadí pruebas y publiqué la aplicación en la nube. Comparto aquí tanto las decisiones de diseño como los límites de lo que el resultado permite afirmar.
