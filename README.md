@@ -1,8 +1,8 @@
 # InsightFlow Sales Dashboard
 
-Panel interactivo para explorar el rendimiento de ventas por período, región, categoría y producto. Desarrollado como parte de **Visualization Reports or Dashboard**.
+Panel interactivo para explorar el rendimiento de ventas por período, región, categoría y producto.
 
-**[Abrir el panel público](https://insightflow-sales-dashboard-he3kljwft48fj5lkjgtyu.streamlit.app)** · **[Ver las pruebas automatizadas](https://github.com/Kiara1616/insightflow-sales-dashboard/actions)**
+**[Explorar el dashboard](https://insightflow-sales-dashboard-he3kljwft48fj5lkjgtyu.streamlit.app)** · **[Leer el estudio técnico](docs/articulo-devto.md)** · **[Ver la automatización](https://github.com/Kiara1616/insightflow-sales-dashboard/actions)**
 
 ## Qué permite analizar
 
@@ -46,6 +46,6 @@ La aplicación estará disponible en `http://localhost:8501`.
 
 Ejecuta las pruebas localmente con `python -m pytest -q`. El [flujo de integración continua](.github/workflows/tests.yml) repite estas comprobaciones automáticamente en GitHub. La versión pública se actualiza desde la rama `main` en Streamlit Community Cloud.
 
-## Contexto académico
+## Estudio técnico
 
-Este repositorio documenta la implementación técnica del panel para la actividad grupal. El artículo y el video complementarán esta documentación con el proceso de construcción, la demostración y las conclusiones.
+El [artículo del proyecto](docs/articulo-devto.md) documenta la pregunta de análisis, las definiciones de los indicadores, las decisiones de visualización, la automatización y las limitaciones de los datos.
