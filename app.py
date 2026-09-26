@@ -29,8 +29,8 @@ def build_dashboard(data: pd.DataFrame) -> None:
     import plotly.express as px
     import streamlit as st
 
-    st.title("📊 Panel de ventas")
-    st.caption("InsightFlow Sales Dashboard · Proyecto de visualización · Equipo Kiara1616")
+    st.title("Panel de análisis comercial")
+    st.caption("Resumen interactivo del rendimiento comercial")
 
     with st.sidebar:
         st.header("Filtros")
@@ -95,12 +95,22 @@ def main() -> None:
     import streamlit as st
 
     st.set_page_config(
-        page_title="Panel de ventas | Actividad Grupal 01",
-        page_icon="📊",
+        page_title="Panel de análisis comercial",
+        page_icon=None,
         layout="wide",
     )
-    st.sidebar.markdown("### Proyecto")
-    st.sidebar.info("Dashboard demostrativo de análisis comercial desarrollado por Kiara1616.")
+    st.markdown(
+        """
+        <style>
+        .block-container { padding-top: 2.2rem; padding-bottom: 2rem; }
+        [data-testid="stMetric"] { background: #f7f9fc; border: 1px solid #e5e7eb; padding: 1rem; border-radius: 0.6rem; }
+        [data-testid="stMetricLabel"] { color: #52606d; }
+        h1 { color: #172b4d; letter-spacing: -0.02em; }
+        h2, h3 { color: #243b53; }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
     data = load_data()
     build_dashboard(data)
 
